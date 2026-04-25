@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(grep -E \"\\(exception|ex\\)$\")"
+      "Bash(grep -E \"\\(exception|ex\\)$\")",
+      "Bash(xargs grep *)",
+      "Bash(xargs sed *)"
     ]
   }
 }
