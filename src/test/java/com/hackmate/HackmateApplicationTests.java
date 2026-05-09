@@ -1,4 +1,4 @@
-package yoon_hyojin.hackmate;
+package com.hackmate;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
