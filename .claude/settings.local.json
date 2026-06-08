@@ -3,7 +3,31 @@
     "allow": [
       "Bash(grep -E \"\\(exception|ex\\)$\")",
       "Bash(xargs grep *)",
-      "Bash(xargs sed *)"
+      "Bash(xargs sed *)",
+      "PowerShell(Get-ChildItem -Path \"D:\\\\hackmate\" -Recurse -Directory | Select-Object FullName | ForEach-Object { $_.FullName })",
+      "Bash(gh api *)",
+      "Bash(python3 -c \"import sys,json; data=json.load\\(sys.stdin\\); [print\\(item['path']\\) for item in data.get\\('tree',[]\\) if item['type']=='blob' and item['path'].endswith\\('.java'\\)]\")",
+      "Bash(gh repo *)",
+      "WebFetch(domain:github.com)",
+      "Bash(git clone *)",
+      "Bash(Get-ChildItem -Recurse -Filter \"*.java\" \"D:\\\\hackmate-server-temp\\\\src\")",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "PowerShell(git clone *)",
+      "Bash(xargs cat)",
+      "Bash(xargs ls -la)",
+      "Bash(./gradlew compileJava)",
+      "Bash(./gradlew clean *)",
+      "Bash(./gradlew build *)",
+      "Bash(Get-ChildItem -Path \"D:\\\\hackmate\" -Recurse -Force)",
+      "Bash(Select-Object -Property FullName, PSIsContainer)",
+      "Bash(Sort-Object FullName)",
+      "Bash(Format-Table -AutoSize)",
+      "Bash(./gradlew compileJava compileTestJava --no-daemon)",
+      "Bash(./gradlew test *)",
+      "Bash(grep -E \"test[s]? completed|BUILD|> Task :test$\")",
+      "Bash(grep -v \"^$\")",
+      "Bash(./gradlew cleanTest test --tests \"yoon_hyojin.hackmate.global.auth.*\" --tests \"yoon_hyojin.hackmate.domain.user.service.*\" --tests \"yoon_hyojin.hackmate.domain.user.controller.*\" --no-daemon)",
+      "Bash(./gradlew compileTestJava *)"
     ]
   }
 }

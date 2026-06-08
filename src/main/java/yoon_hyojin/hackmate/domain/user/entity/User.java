@@ -36,6 +36,15 @@ public class User {
     @Column(name="email", nullable = false, unique = true)
     private String email;
 
+    @Column(name="nickname", unique = true)
+    private String nickname;
+
+    @Column(name="avatar")
+    private String avatar;
+
+    @Column(name="bio")
+    private String bio;
+
     @Column(name="provider")
     private ProviderType provider;
 

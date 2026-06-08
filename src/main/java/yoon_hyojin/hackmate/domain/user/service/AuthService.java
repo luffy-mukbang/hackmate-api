@@ -5,6 +5,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import yoon_hyojin.hackmate.domain.user.dto.request.AutoLoginRequest;
+import yoon_hyojin.hackmate.domain.user.dto.request.CheckNicknameRequest;
 import yoon_hyojin.hackmate.domain.user.dto.request.LoginRequest;
 import yoon_hyojin.hackmate.domain.user.dto.request.SignupRequest;
 import yoon_hyojin.hackmate.domain.user.dto.response.LoginResponse;
@@ -18,6 +19,7 @@ import yoon_hyojin.hackmate.global.auth.security.SecurityUtils;
 import yoon_hyojin.hackmate.global.exception.auth.ExpiredTokenException;
 import yoon_hyojin.hackmate.global.exception.auth.InvalidPasswordException;
 import yoon_hyojin.hackmate.global.exception.auth.InvalidTokenException;
+import yoon_hyojin.hackmate.global.exception.auth.NicknameAlreadyInUseException;
 import yoon_hyojin.hackmate.global.exception.auth.RefreshTokenNotFoundException;
 import yoon_hyojin.hackmate.global.exception.user.UserAlreadyExistsException;
 import yoon_hyojin.hackmate.global.exception.user.UserNotFoundException;
@@ -37,7 +39,7 @@ public class AuthService {
     public LoginResponse login(LoginRequest request) {
         User user = userRepository.findByEmailAndIsDeletedFalse(request.getEmail())
                 .orElseThrow(UserNotFoundException::new);
-        if (!passwordEncoder.matches(request.getPassword(), user.getPassword())) {
+        if (user.getPassword() == null || !passwordEncoder.matches(request.getPassword(), user.getPassword())) {
             throw new InvalidPasswordException();
         }
 
@@ -67,8 +69,8 @@ public class AuthService {
                 .providerId(null)
                 .isDeleted(false)
                 .build();
-        userRepository.save(user);
-        return new SignupResponse(user.getId());
+        User savedUser = userRepository.save(user);
+        return new SignupResponse(savedUser.getId());
     }
 
     public LoginResponse autoLogin(AutoLoginRequest request) {
@@ -103,5 +105,11 @@ public class AuthService {
     public void logOut() {
         User user = securityUtils.getCurrentUser();
         refreshTokenRepository.deleteByUser(user);
+    }
+
+    public void checkNickname(CheckNicknameRequest request) {
+        if (userRepository.existsByNicknameAndIsDeletedFalse(request.getNickname())) {
+            throw new NicknameAlreadyInUseException();
+        }
     }
 }

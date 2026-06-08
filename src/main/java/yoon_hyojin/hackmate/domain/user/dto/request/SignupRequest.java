@@ -1,16 +1,21 @@
 package yoon_hyojin.hackmate.domain.user.dto.request;
 
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
-import javax.annotation.security.DenyAll;
 import java.time.LocalDate;
 
 @Getter
-@DenyAll
+@NoArgsConstructor
+@AllArgsConstructor
 public class SignupRequest {
 
     @NotBlank(message = "이메일을 입력해주세요.")
+    @Email(message = "이메일 형식이 올바르지 않습니다.")
     private String email;
 
     @NotBlank(message = "비밀번호를 입력해주세요.")
@@ -19,6 +24,6 @@ public class SignupRequest {
     @NotBlank(message = "이름을 입력해주세요.")
     private String name;
 
-    @NotBlank(message = "생년월일을 입력해주세요.")
+    @NotNull(message = "생년월일을 입력해주세요.")
     private LocalDate birthDate;
 }
