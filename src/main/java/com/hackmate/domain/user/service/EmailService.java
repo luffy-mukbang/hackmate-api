@@ -1,17 +1,17 @@
-package yoon_hyojin.hackmate.domain.user.service;
+package com.hackmate.domain.user.service;
 
 import jakarta.mail.internet.MimeMessage;
 import lombok.RequiredArgsConstructor;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
-import yoon_hyojin.hackmate.domain.user.repository.UserRepository;
-import yoon_hyojin.hackmate.domain.user.utils.HtmlLoader;
-import yoon_hyojin.hackmate.domain.user.utils.VerificationCodeGenerator;
-import yoon_hyojin.hackmate.global.exception.auth.EmailAlreadyInUseException;
-import yoon_hyojin.hackmate.global.exception.auth.VerificationCodeExpiredException;
-import yoon_hyojin.hackmate.global.exception.auth.VerificationCodeNotMatchException;
-import yoon_hyojin.hackmate.global.redis.RedisService;
+import com.hackmate.domain.user.repository.UserRepository;
+import com.hackmate.domain.user.utils.HtmlLoader;
+import com.hackmate.domain.user.utils.VerificationCodeGenerator;
+import com.hackmate.global.exception.auth.EmailAlreadyInUseException;
+import com.hackmate.global.exception.auth.VerificationCodeExpiredException;
+import com.hackmate.global.exception.auth.VerificationCodeNotMatchException;
+import com.hackmate.global.redis.RedisService;
 
 import java.time.Duration;
 

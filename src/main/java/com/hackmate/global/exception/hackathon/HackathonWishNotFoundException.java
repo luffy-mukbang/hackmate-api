@@ -1,7 +1,7 @@
-package yoon_hyojin.hackmate.global.exception.hackathon;
+package com.hackmate.global.exception.hackathon;
 
 import org.springframework.http.HttpStatus;
-import yoon_hyojin.hackmate.global.exception.DomainException;
+import com.hackmate.global.exception.DomainException;
 
 public class HackathonWishNotFoundException extends DomainException {
     public HackathonWishNotFoundException() {

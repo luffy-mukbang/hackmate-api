@@ -1,4 +1,4 @@
-package yoon_hyojin.hackmate.domain.user.entity;
+package com.hackmate.domain.user.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

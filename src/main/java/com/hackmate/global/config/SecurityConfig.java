@@ -1,4 +1,4 @@
-package yoon_hyojin.hackmate.global.config;
+package com.hackmate.global.config;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
@@ -15,9 +15,9 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
-import yoon_hyojin.hackmate.global.auth.TokenProvider;
-import yoon_hyojin.hackmate.global.auth.security.CustomUserDetailsService;
-import yoon_hyojin.hackmate.global.auth.security.JwtAuthenticationFilter;
+import com.hackmate.global.auth.TokenProvider;
+import com.hackmate.global.auth.security.CustomUserDetailsService;
+import com.hackmate.global.auth.security.JwtAuthenticationFilter;
 
 import java.util.Arrays;
 

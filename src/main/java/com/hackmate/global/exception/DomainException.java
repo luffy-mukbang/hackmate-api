@@ -1,4 +1,4 @@
-package yoon_hyojin.hackmate.global.exception;
+package com.hackmate.global.exception;
 
 import org.springframework.http.HttpStatus;
 

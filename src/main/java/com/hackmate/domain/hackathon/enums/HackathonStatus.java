@@ -1,4 +1,4 @@
-package yoon_hyojin.hackmate.domain.hackathon.enums;
+package com.hackmate.domain.hackathon.enums;
 
 public enum HackathonStatus {
     UPCOMING, // 아직 시작전

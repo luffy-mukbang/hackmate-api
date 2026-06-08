@@ -1,4 +1,4 @@
-package yoon_hyojin.hackmate.domain.user.controller;
+package com.hackmate.domain.user.controller;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import yoon_hyojin.hackmate.domain.user.dto.request.*;
-import yoon_hyojin.hackmate.domain.user.dto.response.LoginResponse;
-import yoon_hyojin.hackmate.domain.user.dto.response.SignupResponse;
-import yoon_hyojin.hackmate.domain.user.service.AuthService;
-import yoon_hyojin.hackmate.domain.user.service.EmailService;
-import yoon_hyojin.hackmate.global.response.ApiResponse;
+import com.hackmate.domain.user.dto.request.*;
+import com.hackmate.domain.user.dto.response.LoginResponse;
+import com.hackmate.domain.user.dto.response.SignupResponse;
+import com.hackmate.domain.user.service.AuthService;
+import com.hackmate.domain.user.service.EmailService;
+import com.hackmate.global.response.ApiResponse;
 
 @RestController
 @RequestMapping("/auth")

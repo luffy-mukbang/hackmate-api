@@ -1,7 +1,7 @@
-package yoon_hyojin.hackmate.global.exception.chat;
+package com.hackmate.global.exception.chat;
 
 import org.springframework.http.HttpStatus;
-import yoon_hyojin.hackmate.global.exception.DomainException;
+import com.hackmate.global.exception.DomainException;
 
 public class ChatNoticeNotFoundException extends DomainException {
     public ChatNoticeNotFoundException() {

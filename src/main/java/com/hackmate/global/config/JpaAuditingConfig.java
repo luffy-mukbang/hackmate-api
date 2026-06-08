@@ -1,4 +1,4 @@
-package yoon_hyojin.hackmate.global.config;
+package com.hackmate.global.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;

@@ -1,4 +1,4 @@
-package yoon_hyojin.hackmate.global.config;
+package com.hackmate.global.config;
 
 
 import io.swagger.v3.oas.models.Components;

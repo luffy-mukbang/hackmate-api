@@ -1,7 +1,7 @@
-package yoon_hyojin.hackmate.global.exception.techstack;
+package com.hackmate.global.exception.techstack;
 
 import org.springframework.http.HttpStatus;
-import yoon_hyojin.hackmate.global.exception.DomainException;
+import com.hackmate.global.exception.DomainException;
 
 public class TechStackAlreadyExistsException extends DomainException {
     public TechStackAlreadyExistsException() {

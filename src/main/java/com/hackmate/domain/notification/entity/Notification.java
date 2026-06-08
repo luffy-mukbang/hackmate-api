@@ -1,11 +1,11 @@
-package yoon_hyojin.hackmate.domain.notification.entity;
+package com.hackmate.domain.notification.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
-import yoon_hyojin.hackmate.domain.notification.enums.NotificationType;
-import yoon_hyojin.hackmate.domain.user.entity.User;
+import com.hackmate.domain.notification.enums.NotificationType;
+import com.hackmate.domain.user.entity.User;
 
 import java.time.LocalDateTime;
 

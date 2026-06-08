@@ -1,7 +1,7 @@
-package yoon_hyojin.hackmate.global.exception.team;
+package com.hackmate.global.exception.team;
 
 import org.springframework.http.HttpStatus;
-import yoon_hyojin.hackmate.global.exception.DomainException;
+import com.hackmate.global.exception.DomainException;
 
 public class TeamJoinRequestAlreadyRespondedException extends DomainException {
     public TeamJoinRequestAlreadyRespondedException() {

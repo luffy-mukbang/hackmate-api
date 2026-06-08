@@ -1,10 +1,10 @@
-package yoon_hyojin.hackmate.domain.techstack.entity;
+package com.hackmate.domain.techstack.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
-import yoon_hyojin.hackmate.domain.team.entity.Team;
+import com.hackmate.domain.team.entity.Team;
 
 import java.time.LocalDateTime;
 

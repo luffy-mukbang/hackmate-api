@@ -1,4 +1,4 @@
-package yoon_hyojin.hackmate;
+package com.hackmate;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

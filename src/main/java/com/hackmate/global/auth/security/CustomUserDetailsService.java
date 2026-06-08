@@ -1,12 +1,12 @@
-package yoon_hyojin.hackmate.global.auth.security;
+package com.hackmate.global.auth.security;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-import yoon_hyojin.hackmate.domain.user.entity.User;
-import yoon_hyojin.hackmate.domain.user.repository.UserRepository;
+import com.hackmate.domain.user.entity.User;
+import com.hackmate.domain.user.repository.UserRepository;
 
 @Service
 @RequiredArgsConstructor

@@ -1,7 +1,7 @@
-package yoon_hyojin.hackmate.global.exception.user;
+package com.hackmate.global.exception.user;
 
 import org.springframework.http.HttpStatus;
-import yoon_hyojin.hackmate.global.exception.DomainException;
+import com.hackmate.global.exception.DomainException;
 
 public class UserNotFoundException extends DomainException {
     public UserNotFoundException() {

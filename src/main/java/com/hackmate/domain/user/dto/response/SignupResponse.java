@@ -1,4 +1,4 @@
-package yoon_hyojin.hackmate.domain.user.dto.response;
+package com.hackmate.domain.user.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

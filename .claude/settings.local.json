@@ -27,7 +27,8 @@
       "Bash(grep -E \"test[s]? completed|BUILD|> Task :test$\")",
       "Bash(grep -v \"^$\")",
       "Bash(./gradlew cleanTest test --tests \"yoon_hyojin.hackmate.global.auth.*\" --tests \"yoon_hyojin.hackmate.domain.user.service.*\" --tests \"yoon_hyojin.hackmate.domain.user.controller.*\" --no-daemon)",
-      "Bash(./gradlew compileTestJava *)"
+      "Bash(./gradlew compileTestJava *)",
+      "Bash(./gradlew compileJava compileTestJava)"
     ]
   }
 }

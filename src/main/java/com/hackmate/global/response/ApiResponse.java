@@ -1,4 +1,4 @@
-package yoon_hyojin.hackmate.global.response;
+package com.hackmate.global.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;

@@ -1,4 +1,4 @@
-package yoon_hyojin.hackmate.global.exception.handler;
+package com.hackmate.global.exception.handler;
 
 import io.swagger.v3.oas.annotations.Hidden;
 import org.springframework.http.HttpStatus;
@@ -9,8 +9,8 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.servlet.NoHandlerFoundException;
-import yoon_hyojin.hackmate.global.exception.DomainException;
-import yoon_hyojin.hackmate.global.response.ApiResponse;
+import com.hackmate.global.exception.DomainException;
+import com.hackmate.global.response.ApiResponse;
 
 @Hidden
 @RestControllerAdvice

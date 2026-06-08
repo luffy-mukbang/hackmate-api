@@ -1,11 +1,11 @@
-package yoon_hyojin.hackmate.domain.hackathon.entity;
+package com.hackmate.domain.hackathon.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
-import yoon_hyojin.hackmate.domain.hackathon.enums.HackathonStatus;
+import com.hackmate.domain.hackathon.enums.HackathonStatus;
 
 import java.time.LocalDateTime;
 

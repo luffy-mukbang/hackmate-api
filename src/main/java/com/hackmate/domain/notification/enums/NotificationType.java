@@ -1,4 +1,4 @@
-package yoon_hyojin.hackmate.domain.notification.enums;
+package com.hackmate.domain.notification.enums;
 
 public enum NotificationType {
     TEAM_INVITE_RECEIVED,

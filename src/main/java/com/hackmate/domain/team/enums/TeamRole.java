@@ -1,4 +1,4 @@
-package yoon_hyojin.hackmate.domain.team.enums;
+package com.hackmate.domain.team.enums;
 
 public enum TeamRole {
     BACKEND,

@@ -1,7 +1,7 @@
-package yoon_hyojin.hackmate.global.exception.auth;
+package com.hackmate.global.exception.auth;
 
 import org.springframework.http.HttpStatus;
-import yoon_hyojin.hackmate.global.exception.DomainException;
+import com.hackmate.global.exception.DomainException;
 
 public class NotAuthenticatedException extends DomainException {
     public NotAuthenticatedException() {

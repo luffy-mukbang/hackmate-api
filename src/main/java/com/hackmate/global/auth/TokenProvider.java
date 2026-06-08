@@ -1,4 +1,4 @@
-package yoon_hyojin.hackmate.global.auth;
+package com.hackmate.global.auth;
 
 import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;

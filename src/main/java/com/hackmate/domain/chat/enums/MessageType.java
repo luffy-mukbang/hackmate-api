@@ -1,4 +1,4 @@
-package yoon_hyojin.hackmate.domain.chat.enums;
+package com.hackmate.domain.chat.enums;
 
 public enum MessageType {
     TEXT,

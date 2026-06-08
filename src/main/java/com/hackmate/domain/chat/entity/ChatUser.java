@@ -1,11 +1,11 @@
-package yoon_hyojin.hackmate.domain.chat.entity;
+package com.hackmate.domain.chat.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
-import yoon_hyojin.hackmate.domain.chat.enums.ChatRole;
-import yoon_hyojin.hackmate.domain.user.entity.User;
+import com.hackmate.domain.chat.enums.ChatRole;
+import com.hackmate.domain.user.entity.User;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

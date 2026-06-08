@@ -1,13 +1,13 @@
-package yoon_hyojin.hackmate.global.auth.security;
+package com.hackmate.global.auth.security;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
-import yoon_hyojin.hackmate.domain.user.entity.User;
-import yoon_hyojin.hackmate.domain.user.repository.UserRepository;
-import yoon_hyojin.hackmate.global.exception.auth.NotAuthenticatedException;
-import yoon_hyojin.hackmate.global.exception.user.UserNotFoundException;
+import com.hackmate.domain.user.entity.User;
+import com.hackmate.domain.user.repository.UserRepository;
+import com.hackmate.global.exception.auth.NotAuthenticatedException;
+import com.hackmate.global.exception.user.UserNotFoundException;
 
 @Component
 @RequiredArgsConstructor
