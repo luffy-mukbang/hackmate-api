@@ -1,4 +1,4 @@
-package yoon_hyojin.hackmate.domain.user.utils;
+package com.hackmate.domain.user.utils;
 
 import lombok.experimental.UtilityClass;
 import org.springframework.core.io.ClassPathResource;

@@ -1,4 +1,4 @@
-package yoon_hyojin.hackmate.domain.user.controller;
+package com.hackmate.domain.user.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
@@ -12,16 +12,16 @@ import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
-import yoon_hyojin.hackmate.global.config.SecurityConfig;
-import yoon_hyojin.hackmate.domain.user.dto.request.*;
-import yoon_hyojin.hackmate.domain.user.dto.response.LoginResponse;
-import yoon_hyojin.hackmate.domain.user.dto.response.SignupResponse;
-import yoon_hyojin.hackmate.domain.user.service.AuthService;
-import yoon_hyojin.hackmate.domain.user.service.EmailService;
-import yoon_hyojin.hackmate.global.auth.TokenProvider;
-import yoon_hyojin.hackmate.global.auth.security.CustomUserDetailsService;
-import yoon_hyojin.hackmate.global.exception.auth.InvalidPasswordException;
-import yoon_hyojin.hackmate.global.exception.user.UserNotFoundException;
+import com.hackmate.global.config.SecurityConfig;
+import com.hackmate.domain.user.dto.request.*;
+import com.hackmate.domain.user.dto.response.LoginResponse;
+import com.hackmate.domain.user.dto.response.SignupResponse;
+import com.hackmate.domain.user.service.AuthService;
+import com.hackmate.domain.user.service.EmailService;
+import com.hackmate.global.auth.TokenProvider;
+import com.hackmate.global.auth.security.CustomUserDetailsService;
+import com.hackmate.global.exception.auth.InvalidPasswordException;
+import com.hackmate.global.exception.user.UserNotFoundException;
 
 import java.time.LocalDate;
 

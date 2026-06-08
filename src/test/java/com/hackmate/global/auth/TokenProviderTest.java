@@ -1,4 +1,4 @@
-package yoon_hyojin.hackmate.global.auth;
+package com.hackmate.global.auth;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

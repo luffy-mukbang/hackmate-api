@@ -1,4 +1,4 @@
-package yoon_hyojin.hackmate.domain.user.service;
+package com.hackmate.domain.user.service;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -6,11 +6,11 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import yoon_hyojin.hackmate.domain.user.repository.UserRepository;
-import yoon_hyojin.hackmate.global.exception.auth.EmailAlreadyInUseException;
-import yoon_hyojin.hackmate.global.exception.auth.VerificationCodeExpiredException;
-import yoon_hyojin.hackmate.global.exception.auth.VerificationCodeNotMatchException;
-import yoon_hyojin.hackmate.global.redis.RedisService;
+import com.hackmate.domain.user.repository.UserRepository;
+import com.hackmate.global.exception.auth.EmailAlreadyInUseException;
+import com.hackmate.global.exception.auth.VerificationCodeExpiredException;
+import com.hackmate.global.exception.auth.VerificationCodeNotMatchException;
+import com.hackmate.global.redis.RedisService;
 
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.BDDMockito.given;

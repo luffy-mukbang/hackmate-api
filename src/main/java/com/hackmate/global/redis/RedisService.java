@@ -1,4 +1,4 @@
-package yoon_hyojin.hackmate.global.redis;
+package com.hackmate.global.redis;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.redis.core.StringRedisTemplate;
