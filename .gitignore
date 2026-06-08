@@ -41,3 +41,5 @@ src/main/resources/application.properties
 
 # temp directory
 hackmate-server-temp/
+
+.claude
