@@ -1,4 +1,4 @@
-package com.hackmate.domain.user.dto.response;
+package com.hackmate.domain.auth.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

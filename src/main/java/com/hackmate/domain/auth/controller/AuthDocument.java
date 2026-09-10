@@ -1,11 +1,11 @@
-package com.hackmate.domain.user.controller;
+package com.hackmate.domain.auth.controller;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.ResponseEntity;
-import com.hackmate.domain.user.dto.request.*;
-import com.hackmate.domain.user.dto.response.LoginResponse;
-import com.hackmate.domain.user.dto.response.SignupResponse;
+import com.hackmate.domain.auth.dto.request.*;
+import com.hackmate.domain.auth.dto.response.LoginResponse;
+import com.hackmate.domain.auth.dto.response.SignupResponse;
 import com.hackmate.global.response.ApiResponse;
 
 @Tag(name = "Auth", description = "인증 관련 API")

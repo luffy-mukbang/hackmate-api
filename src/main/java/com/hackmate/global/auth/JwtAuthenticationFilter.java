@@ -1,4 +1,4 @@
-package com.hackmate.global.auth.security;
+package com.hackmate.global.auth;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -12,7 +12,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
-import com.hackmate.global.auth.TokenProvider;
 
 import java.io.IOException;
 

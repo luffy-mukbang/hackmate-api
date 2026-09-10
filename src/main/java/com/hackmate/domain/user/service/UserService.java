@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import com.hackmate.domain.user.dto.request.ChangePasswordRequest;
 import com.hackmate.domain.user.entity.User;
-import com.hackmate.global.auth.security.SecurityUtils;
+import com.hackmate.global.auth.SecurityUtils;
 import com.hackmate.global.exception.auth.InvalidPasswordException;
 
 @Service

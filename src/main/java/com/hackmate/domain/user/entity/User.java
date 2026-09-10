@@ -6,6 +6,7 @@ import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import com.hackmate.domain.user.enums.ProviderType;
+import com.hackmate.domain.user.enums.UserRole;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -50,6 +51,11 @@ public class User {
 
     @Column(name="provider_id")
     private String providerId;
+
+    @Column(name="role", nullable = false)
+    @Enumerated(EnumType.STRING)
+    @Builder.Default
+    private UserRole role = UserRole.USER;
 
     @Column(name="is_deleted")
     private boolean isDeleted;

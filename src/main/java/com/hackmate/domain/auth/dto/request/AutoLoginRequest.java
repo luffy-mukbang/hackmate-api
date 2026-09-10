@@ -1,11 +1,10 @@
-package com.hackmate.domain.user.dto.response;
+package com.hackmate.domain.auth.dto.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public class LoginResponse {
-    private String accessToken;
+public class AutoLoginRequest {
     private String refreshToken;
 }

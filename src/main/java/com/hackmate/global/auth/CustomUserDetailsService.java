@@ -1,4 +1,4 @@
-package com.hackmate.global.auth.security;
+package com.hackmate.global.auth;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -22,7 +22,7 @@ public class CustomUserDetailsService implements UserDetailsService {
         return org.springframework.security.core.userdetails.User.builder()
                 .username(user.getEmail())
                 .password(user.getPassword() != null ? user.getPassword() : "")
-                .roles("USER")
+                .roles(user.getRole().name())
                 .build();
     }
 }

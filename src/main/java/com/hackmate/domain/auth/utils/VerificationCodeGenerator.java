@@ -1,4 +1,4 @@
-package com.hackmate.domain.user.utils;
+package com.hackmate.domain.auth.utils;
 
 import java.security.SecureRandom;
 

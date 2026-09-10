@@ -1,4 +1,4 @@
-package com.hackmate.domain.user.service;
+package com.hackmate.domain.auth.service;
 
 import jakarta.mail.internet.MimeMessage;
 import lombok.RequiredArgsConstructor;
@@ -6,8 +6,8 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
 import com.hackmate.domain.user.repository.UserRepository;
-import com.hackmate.domain.user.utils.HtmlLoader;
-import com.hackmate.domain.user.utils.VerificationCodeGenerator;
+import com.hackmate.domain.auth.utils.HtmlLoader;
+import com.hackmate.domain.auth.utils.VerificationCodeGenerator;
 import com.hackmate.global.exception.auth.EmailAlreadyInUseException;
 import com.hackmate.global.exception.auth.VerificationCodeExpiredException;
 import com.hackmate.global.exception.auth.VerificationCodeNotMatchException;

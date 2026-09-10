@@ -1,4 +1,4 @@
-package com.hackmate.domain.user.dto.request;
+package com.hackmate.domain.auth.dto.request;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
