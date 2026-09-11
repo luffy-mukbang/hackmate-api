@@ -1,4 +1,4 @@
-package com.hackmate.domain.user.service;
+package com.hackmate.domain.auth.service;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

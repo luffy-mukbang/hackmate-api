@@ -1,4 +1,4 @@
-package com.hackmate.domain.user.controller;
+package com.hackmate.domain.auth.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
@@ -13,13 +13,13 @@ import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
 import com.hackmate.global.config.SecurityConfig;
-import com.hackmate.domain.user.dto.request.*;
-import com.hackmate.domain.user.dto.response.LoginResponse;
-import com.hackmate.domain.user.dto.response.SignupResponse;
-import com.hackmate.domain.user.service.AuthService;
-import com.hackmate.domain.user.service.EmailService;
+import com.hackmate.domain.auth.dto.request.*;
+import com.hackmate.domain.auth.dto.response.LoginResponse;
+import com.hackmate.domain.auth.dto.response.SignupResponse;
+import com.hackmate.domain.auth.service.AuthService;
+import com.hackmate.domain.auth.service.EmailService;
 import com.hackmate.global.auth.TokenProvider;
-import com.hackmate.global.auth.security.CustomUserDetailsService;
+import com.hackmate.global.auth.CustomUserDetailsService;
 import com.hackmate.global.exception.auth.InvalidPasswordException;
 import com.hackmate.global.exception.user.UserNotFoundException;
 
