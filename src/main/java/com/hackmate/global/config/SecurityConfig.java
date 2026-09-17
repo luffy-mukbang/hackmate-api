@@ -16,13 +16,14 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import com.hackmate.global.auth.TokenProvider;
-import com.hackmate.global.auth.security.CustomUserDetailsService;
-import com.hackmate.global.auth.security.JwtAuthenticationFilter;
+import com.hackmate.global.auth.CustomUserDetailsService;
+import com.hackmate.global.auth.JwtAuthenticationFilter;
 
 import java.util.Arrays;
 
 @Configuration
 @RequiredArgsConstructor
+@org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity
 public class SecurityConfig {
 
     private final TokenProvider tokenProvider;
@@ -67,6 +68,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(
                                 "/auth/**",
+                                "/hackathons/**",
                                 "/swagger-ui/**",
                                 "/swagger-ui.html",
                                 "/v3/api-docs/**",
